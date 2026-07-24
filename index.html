@@ -136,10 +136,10 @@
     <!-- 作品1 -->
     <article class="work-card">
       <span class="work-badge">完成作品</span>
-      <h2 class="work-title">1. 【作品名1】（完成済みゲーム作品）</h2>
+      <h2 class="work-title">1. ネットワーク通信型 2D縦スクロールアクションゲーム</h2>
       
       <div class="media-container">
-        <!-- 動画ファイルを直接置く場合 -->
+        <!-- 動画ファイルを直接置く場合（YouTube等の埋め込み iframe に変更可能） -->
         <video controls poster="thumbnail1.jpg">
           <source src="video1.mp4" type="video/mp4">
           お使いのブラウザは動画再生に対応していません。
@@ -148,22 +148,23 @@
 
       <div class="details-group">
         <div class="details-label">概要</div>
-        <p>〇〇をコンセプトにしたPC向け3Dアクションゲーム。企画から実装、リリースまでを自身で実施しました。</p>
+        <p>Linux環境でC言語とSDLライブラリを用いてネットワーク通信による2人協力型の2D縦スクロールアクションゲームを4名で制作しました。</p>
       </div>
 
       <div class="details-group">
         <div class="details-label">使用技術・開発環境</div>
         <div class="tags">
-          <span class="tag">Unity</span>
-          <span class="tag">C#</span>
-          <span class="tag">Blender</span>
+          <span class="tag">C言語</span>
+          <span class="tag">SDLライブラリ</span>
+          <span class="tag">Linux</span>
+          <span class="tag">ソケット通信</span>
           <span class="tag">Git</span>
         </div>
       </div>
 
       <div class="details-group">
         <div class="details-label">こだわった点・技術的工夫</div>
-        <p>処理負荷を低減するためのフレーム最適化や、打撃時の打撃感を高めるシェーダーやエフェクト表現にこだわって実装しました。</p>
+        <p>C言語およびSDLライブラリを活用した自作ゲームエンジン的アプローチと、ソケット通信によるリアルタイムな2人協力プレイの同期処理を実現。4名でのチーム開発においてモジュール分割を徹底し、通信遅延を抑えた操作感とスムーズなスクロール描画を工夫しました。</p>
       </div>
     </article>
 
