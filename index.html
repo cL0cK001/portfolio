@@ -14,6 +14,10 @@
       --tag-bg: #f3f4f6;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       line-height: 1.6;
@@ -42,6 +46,35 @@
     header p {
       color: #6b7280;
       font-size: 1.05rem;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link-btn {
+      display: inline-block;
+      padding: 8px 18px;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      transition: all 0.2s ease;
+    }
+
+    .nav-link-btn:hover {
+      background-color: var(--accent-color);
+      color: #ffffff;
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
     }
 
     .work-card {
@@ -130,11 +163,16 @@
   <div class="container">
     <header>
       <h1>ポートフォリオ / 開発実績</h1>
-      <p>これまでに制作したゲーム作品および研究成果です。</p>
+      <p>制作したゲーム作品および研究成果です。</p>
+      <nav class="nav-links">
+        <a href="#hurry-up" class="nav-link-btn">Hurry Up</a>
+        <a href="#odd-odds" class="nav-link-btn">Odd Odds</a>
+        <a href="#missile-vr" class="nav-link-btn">ミサイル避難VRシミュレーター</a>
+      </nav>
     </header>
 
     <!-- 作品1 -->
-    <article class="work-card">
+    <article class="work-card" id="hurry-up">
       <span class="work-badge">完成作品</span>
       <h2 class="work-title">1. Hurry Up（2人協力型2D縦スクロールアクションゲーム）</h2>
       
@@ -176,7 +214,7 @@
     </article>
 
     <!-- 作品2 -->
-    <article class="work-card">
+    <article class="work-card" id="odd-odds">
       <span class="work-badge" style="background-color: #059669;">制作中</span>
       <h2 class="work-title">2. Odd Odds(制作中のPC向けゲーム)</h2>
       
@@ -215,7 +253,7 @@
     </article>
 
     <!-- 作品3 -->
-    <article class="work-card">
+    <article class="work-card" id="missile-vr">
       <span class="work-badge" style="background-color: #7c3aed;">研究作品</span>
       <h2 class="work-title">3. ミサイル避難VRシミュレーター（学士時代の研究制作）</h2>
       
