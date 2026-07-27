@@ -288,8 +288,40 @@
       </div>
 
       <div class="details-group">
-        <div class="details-label">面白くしたポイント・技術的な工夫</div>
-        <p>プログラマー4名による開発において、各システム（UFOキャッチャー、ピンボール、訪問者システム等）が疎結合に動作するようコンポーネント化を徹底。UFOキャッチャーでは、アームの物理挙動調整に加えて、タイプライターによる動的な能力変更（アーム速度アップ・機能拡張等）を簡単に適用できる柔軟なデータ構造と状態管理を工夫しています。</p>
+        <div class="details-label">面白くしたポイント</div>
+        <ul>
+          <li><strong>ローグライク×ギャンブルの独自のゲーム性</strong>：UFOキャッチャーやピンボールで資金を稼ぎ、タイプライターで能力強化・カスタマイズを行う戦略的なゲーム展開</li>
+          <li><strong>柔軟なコンポーネント連携</strong>：4名開発において各ゲームシステム（キャッチャー、ピンボール、訪問者イベント等）が疎結合かつスムーズに連携する設計</li>
+        </ul>
+      </div>
+
+      <div class="details-group">
+        <div class="details-label">技術的な工夫</div>
+        <ul>
+          <li>
+            <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader GraphとC#スクリプトを連動させ、「うごめくダイヤモンド（Dark Diamond）」からクリアな「ダイヤモンド（Diamond）」へリアルタイムに変化するシェーダー演出を実装
+            <div style="margin-top: 12px; margin-bottom: 12px;">
+              <!-- 変化フロー (darkdiamond.gif → diamond.png) -->
+              <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;">
+                <div style="text-align: center;">
+                  <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 4px; font-weight: bold;">変化前 (Dark Diamond)</div>
+                  <img src="darkdiamond.gif" alt="Dark Diamond" style="height: 120px; width: auto; border: 1px solid var(--border-color); border-radius: 8px; background: #000;">
+                </div>
+                <div style="font-size: 1.5rem; color: #9ca3af; font-weight: bold;">&rarr;</div>
+                <div style="text-align: center;">
+                  <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 4px; font-weight: bold;">変化後 (Diamond)</div>
+                  <img src="diamond.png" alt="Diamond" style="height: 120px; width: auto; border: 1px solid var(--border-color); border-radius: 8px; background: #000;">
+                </div>
+              </div>
+              <!-- Shader Graph 構成図 -->
+              <div style="margin-top: 8px;">
+                <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 4px; font-weight: bold;">実装に使用した Shader Graph 構成</div>
+                <img src="shadergraph.png" alt="Shader Graph" style="max-width: 100%; width: 450px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              </div>
+            </div>
+          </li>
+          <li><strong>UFOキャッチャーシステムの動的データ・状態管理</strong>：アームの物理挙動調整に加えて、タイプライターによる機能・速度アップグレードを動的に適用する柔軟なデータ構造と状態管理</li>
+        </ul>
       </div>
     </article>
 
