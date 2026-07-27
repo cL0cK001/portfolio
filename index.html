@@ -134,6 +134,15 @@
       color: #374151;
     }
 
+    .details-group ul {
+      margin: 5px 0 0 0;
+      padding-left: 20px;
+    }
+
+    .details-group li {
+      margin-bottom: 4px;
+    }
+
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -210,8 +219,21 @@
       </div>
 
       <div class="details-group">
-        <div class="details-label">面白くしたポイント・技術的な工夫</div>
-        <p>ゲームエンジンに頼らずC言語とSDLライブラリで描画・挙動ロジックを構築。自作の縦スクロール処理や精度の高い当たり判定の実装により、快適な操作感を実現しました。また、通信担当メンバーのモジュールと円滑にデータ結合できるよう、入力・状態同期のインターフェース分離を意識して設計しました。</p>
+        <div class="details-label">面白くしたポイント</div>
+        <ul>
+          <li><strong>2人の協力が不可欠なゲーム進行</strong>：互いにコミュニケーションを取り合って進行する連携設計</li>
+          <li><strong>迫りくるタイマーのハラハラ感</strong>：制限時間内に最上部を目指すスリルと緊張感</li>
+          <li><strong>HP（体力）共有による責任感</strong>：ダメージを共有することで生まれる一体感と緊張感</li>
+        </ul>
+      </div>
+
+      <div class="details-group">
+        <div class="details-label">技術的な工夫</div>
+        <ul>
+          <li><strong>モジュール分割による可読性の向上</strong>：ヘッダー、メイン処理、キャラクターデータ、マップデータ等を分離し可読性を向上</li>
+          <li><strong>高精度な当たり判定の実装</strong>：判定を上半身と下半身に分割して精度を上げ、壁のすり抜け現象を防止</li>
+          <li><strong>自キャラクター追従型のスクロール制御</strong>：自身のキャラクター移動に特化して追従する縦スクロール描画制御</li>
+        </ul>
       </div>
     </article>
 
