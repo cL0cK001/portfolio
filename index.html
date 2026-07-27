@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,7 +108,8 @@
     .media-container {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 アスペクト比 */
+      padding-top: 56.25%;
+      /* 16:9 アスペクト比 */
       background-color: #000;
       border-radius: 8px;
       overflow: hidden;
@@ -175,6 +177,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
@@ -193,12 +196,10 @@
     <article class="work-card" id="hurry-up">
       <span class="work-badge">完成作品（制作期間：3か月）</span>
       <h2 class="work-title">1. Hurry Up（2人協力型2D縦スクロールアクションゲーム）</h2>
-      
+
       <div class="media-container">
-        <iframe 
-          src="https://www.youtube.com/embed/qqtpZ-2buX8" 
-          title="Hurry Up プレイ動画" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        <iframe src="https://www.youtube.com/embed/qqtpZ-2buX8" title="Hurry Up プレイ動画"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
       </div>
@@ -206,13 +207,14 @@
       <div class="details-group">
         <div class="details-label">概要</div>
         <p>ネットワーク通信による2人協力型の2D縦スクロールアクションゲームです。<br>
-        制限時間内に2人で協力し、コミュニケーションを取りながら、最上部を目指そう！</p>
+          制限時間内に2人で協力し、コミュニケーションを取りながら、最上部を目指そう！</p>
       </div>
 
       <div class="details-group">
         <div class="details-label">自分の役割</div>
         <p><strong>メインプログラマー</strong><br>
-        ネットワーク通信担当2名、デザイナー1名、メインプログラマー1名の4名体制で開発。キャラクターの移動・アクション挙動、当たり判定（衝突判定）、縦スクロール描画処理、マップデータの構築など、ゲームの根幹を担う主要システムの開発を担当しました。</p>
+          ネットワーク通信担当2名、デザイナー1名、メインプログラマー1名の4名体制で開発。キャラクターの移動・アクション挙動、当たり判定（衝突判定）、縦スクロール描画処理、マップデータの構築など、ゲームの根幹を担う主要システムの開発を担当しました。
+        </p>
       </div>
 
       <div class="details-group">
@@ -228,9 +230,12 @@
       <div class="details-group">
         <div class="details-label">面白くしたポイント</div>
         <ul>
-          <li><img src="player1.png" alt="Player 1" class="pixel-icon"><img src="player2.png" alt="Player 2" class="pixel-icon"><strong>2人の協力が不可欠なゲーム進行</strong>：互いにコミュニケーションを取り合って進行する連携設計</li>
-          <li><img src="heart.png" alt="HP" class="pixel-icon"><strong>迫りくるタイマーとHP共有によるハラハラ感</strong>：制限時間とHP共有が生み出すスリルと緊張感</li>
-          <li><img src="lever.png" alt="Lever" class="pixel-icon"><strong>レバー操作による協力ギミック</strong>：レバーを切り替えてステージの仕掛けを動かし、2人で相互に操作し合いながら道を切り拓く仕掛け</li>
+          <li><img src="player1.png" alt="Player 1" class="pixel-icon"><img src="player2.png" alt="Player 2"
+              class="pixel-icon"><strong>2人の協力が不可欠なゲーム進行</strong>：互いにコミュニケーションを取り合って進行する連携設計</li>
+          <li><img src="heart.png" alt="HP"
+              class="pixel-icon"><strong>迫りくるタイマーとHP共有によるハラハラ感</strong>：制限時間とHP共有が生み出すスリルと緊張感</li>
+          <li><img src="lever.png" alt="Lever"
+              class="pixel-icon"><strong>レバー操作による協力ギミック</strong>：レバーを切り替えてステージの仕掛けを動かし、2人で相互に操作し合いながら道を切り拓く仕掛け</li>
         </ul>
       </div>
 
@@ -240,14 +245,16 @@
           <li>
             <strong>モジュール分割による可読性の向上</strong>：ヘッダー、メイン処理、キャラクターデータ、マップデータ等を分離し可読性を向上
             <div style="margin-top: 8px; margin-bottom: 12px;">
-              <img src="module_structure.png" alt="モジュール分割構成" style="max-width: 90px; height: auto; border: 1px solid var(--border-color); border-radius: 6px; padding: 4px; background: #fff;">
+              <img src="module_structure.png" alt="モジュール分割構成"
+                style="max-width: 90px; height: auto; border: 1px solid var(--border-color); border-radius: 6px; padding: 4px; background: #fff;">
             </div>
           </li>
           <li><strong>高精度な当たり判定の実装</strong>：判定を上半身と下半身に分割して精度を上げ、壁のすり抜け現象を防止</li>
           <li>
             <strong>自プレイヤー追従の画面スクロール</strong>：通信相手ではなく「自分の操作キャラクター」の動きに合わせて画面が縦スクロールする追従機能
             <div style="margin-top: 8px; margin-bottom: 12px;">
-              <img src="scrol.gif" alt="自プレイヤー追従スクロール動作デモ" style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <img src="scrol.gif" alt="自プレイヤー追従スクロール動作デモ"
+                style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
             </div>
           </li>
         </ul>
@@ -258,7 +265,7 @@
     <article class="work-card" id="odd-odds">
       <span class="work-badge" style="background-color: #059669;">制作中（5月〜）</span>
       <h2 class="work-title">2. Odd Odds（PC向けローグライク×ギャンブルゲーム）</h2>
-      
+
       <div class="media-container">
         <video controls poster="thumbnail2.jpg">
           <source src="video2.mp4" type="video/mp4">
@@ -268,45 +275,58 @@
 
       <div class="details-group">
         <div class="details-label">概要</div>
-        <p>「ローグライク×ギャンブル」をコンセプトとしたPC向けゲーム。UFOキャッチャーやピンボールで資金を稼ぎ、数ターンごとに迫る借金の返済を持ちこたえよう！毎ターン行えるアームの強化や速度アップといったローグライク要素を活用したり、数ターンごとに発生する訪問者イベントを進めながら目標金額の返済を目指すゲームです。</p>
+        <p>
+          「ローグライク×ギャンブル」をコンセプトとしたPC向けゲーム。UFOキャッチャーやピンボールで資金を稼ぎ、数ターンごとに迫る借金の返済を持ちこたえよう！毎ターン行えるアームの強化や速度アップといったローグライク要素を活用したり、数ターンごとに発生する訪問者イベントを進めながら目標金額の返済を目指すゲームです。
+        </p>
       </div>
 
       <div class="details-group">
         <div class="details-label">自分の役割</div>
         <p><strong>UFOキャッチャーシステムの設計・開発</strong><br>
-        プログラマー4名でゲームの主要4システムをそれぞれ分担して開発を進めており、私はUFOキャッチャーのシステムを担当しています。アームの移動・昇降・掴み動作の物理判定から、UI実装、オブジェクト作成、毎ターンのアーム機能・速度等のアップグレード実装まで、設計・開発を行っています。</p>
-        
+          プログラマー4名でゲームの主要4システムをそれぞれ分担して開発を進めており、私はUFOキャッチャーのシステムを担当しています。アームの移動・昇降・掴み動作の物理判定から、UI実装、オブジェクト作成、毎ターンのアーム機能・速度等のアップグレード実装まで、設計・開発を行っています。
+        </p>
+
         <!-- UFOキャッチャー開発進捗 (ufo1 -> ufo2 -> ufo3) -->
         <div style="margin-top: 18px; margin-bottom: 18px;">
-          <div style="font-size: 0.85rem; color: #374151; margin-bottom: 10px; font-weight: bold;">UFOキャッチャーシステムの開発進捗</div>
-          
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; align-items: start; max-width: 100%;">
+          <div style="font-size: 0.85rem; color: #374151; margin-bottom: 10px; font-weight: bold;">UFOキャッチャーシステムの開発進捗
+          </div>
+
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; align-items: start; max-width: 100%;">
             <!-- 1. 初期試作 -->
             <div style="text-align: center; flex: 1;">
               <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">1. 初期試作</div>
-              <div style="width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <div
+                style="width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                 <img src="ufo1.gif" alt="UFOキャッチャー開発初期 (ufo1)" style="width: 100%; height: 100%; object-fit: contain;">
               </div>
             </div>
 
             <!-- 2. コインをつかめるように -->
             <div style="text-align: center; flex: 1;">
-              <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">2. コインをつかめるように</div>
-              <div style="width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                <img src="ufo2.gif" alt="UFOキャッチャー コインをつかめるように (ufo2)" style="width: 100%; height: 100%; object-fit: contain;">
+              <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">2. コインをつかめるように
+              </div>
+              <div
+                style="width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <img src="ufo2.gif" alt="UFOキャッチャー コインをつかめるように (ufo2)"
+                  style="width: 100%; height: 100%; object-fit: contain;">
               </div>
             </div>
 
             <!-- 3. 挙動・デザイン改善（現在） -->
             <div style="text-align: center; flex: 1;">
-              <div style="font-size: 0.8rem; color: var(--accent-color); margin-bottom: 6px; font-weight: bold;">3. 挙動・デザイン改善（現在）</div>
-              <div style="width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 2px solid var(--accent-color); box-shadow: 0 2px 8px rgba(37,99,235,0.2);">
-                <img src="ufo3.gif" alt="UFOキャッチャー 挙動・デザイン改善 (ufo3)" style="width: 100%; height: 100%; object-fit: contain;">
+              <div style="font-size: 0.8rem; color: var(--accent-color); margin-bottom: 6px; font-weight: bold;">3.
+                挙動・デザイン改善（現在）</div>
+              <div
+                style="width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 2px solid var(--accent-color); box-shadow: 0 2px 8px rgba(37,99,235,0.2);">
+                <img src="ufo3.gif" alt="UFOキャッチャー 挙動・デザイン改善 (ufo3)"
+                  style="width: 100%; height: 100%; object-fit: contain;">
               </div>
             </div>
           </div>
 
-          <div style="font-size: 0.8rem; color: #4b5563; margin-top: 12px; background: #f3f4f6; padding: 6px 12px; border-radius: 6px; display: inline-block;">
+          <div
+            style="font-size: 0.8rem; color: #4b5563; margin-top: 12px; background: #f3f4f6; padding: 6px 12px; border-radius: 6px; display: inline-block;">
             ※ここからさらに、ユーザーが操作していて気持ちよく・楽しくなる要素を追加していく予定です。
           </div>
         </div>
@@ -325,9 +345,11 @@
       <div class="details-group">
         <div class="details-label">面白くしたポイント</div>
         <ul>
-          <li><strong>ルーレット機能によるワクワク感とランダム性の創出</strong>：プレゼントボックスを落とし口へ入れるとルーレットが回転し、当選したアイテムが上空から降り注ぐ演出・ギミックを実装。ギャンブルならではの胸が高鳴るランダム要素を追加</li>
+          <li>
+            <strong>ルーレット機能によるワクワク感とランダム性の創出</strong>：プレゼントボックスを落とし口へ入れるとルーレットが回転し、当選したアイテムが上空から降り注ぐ演出・ギミックを実装。ギャンブルならではの胸が高鳴るランダム要素を追加
+          </li>
           <li><strong>アーム操作の手触りと掴んだ瞬間の爽快感の追求</strong>：コインを掴み取る際の物理挙動や操作感にこだわり、直感的で心地よい手応えとプレイの爽快感を追求</li>
-          <li><strong>特定アイテム落下時のライト演出による期待感向上</strong>：特定のアイテムが落下する際にライト演出を挟むことで、次に何が手に入るか胸が高鳴る演出と期待感を強化</li>
+          <li><strong>特定アイテム落下時のライト演出</strong>：特定のアイテムが落下する際にライト演出を挟むことで、何が手に入っているかを可視化し、期待感を強化</li>
         </ul>
       </div>
 
@@ -337,19 +359,27 @@
           <li>
             <strong>UFOキャッチャーの物理挙動・掴み動作のリアリティ追求</strong>：アーム移動時の自然な揺れ挙動や、コインを掴みあげる物理判定ロジックにこだわり、本物のキャッチャー機のようなリアルな操作感を再現
             <div style="margin-top: 10px; margin-bottom: 12px; text-align: center;">
-              <img src="UFO.gif" alt="UFOキャッチャーのアーム揺れ・掴み動作デモ" style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
+              <img src="UFO.gif" alt="UFOキャッチャーのアーム揺れ・掴み動作デモ"
+                style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
             </div>
           </li>
           <li>
-            <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader GraphとC#スクリプトを連動させ、「青と黒の流体がうごめくダイアモンド」から「ダイアモンド」に変化するシェーダー演出を実装
+            <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader
+            GraphとC#スクリプトを連動させ、「青と黒の流体がうごめくダイアモンド」から「ダイアモンド」に変化するシェーダー演出を実装
             <div style="margin-top: 12px; margin-bottom: 12px;">
               <!-- 変化フロー（中央寄せ・Y座標位置統一・大サイズ） -->
-              <div style="display: flex; align-items: flex-end; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 16px; margin-bottom: 22px; text-align: center;">
+              <div
+                style="display: flex; align-items: flex-end; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 16px; margin-bottom: 22px; text-align: center;">
                 <!-- 変化前 -->
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
-                  <div style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">変化前 (青と黒の流体がうごめくダイアモンド)</div>
-                  <div style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="darkdiamond.gif" alt="青と黒の流体がうごめくダイアモンド" style="width: 100%; height: 100%; object-fit: contain;">
+                <div
+                  style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
+                  <div
+                    style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">
+                    変化前 (青と黒の流体がうごめくダイアモンド)</div>
+                  <div
+                    style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <img src="darkdiamond.gif" alt="青と黒の流体がうごめくダイアモンド"
+                      style="width: 100%; height: 100%; object-fit: contain;">
                   </div>
                 </div>
 
@@ -357,9 +387,13 @@
                 <div style="font-size: 2.2rem; color: #9ca3af; font-weight: bold; margin-bottom: 110px;">&rarr;</div>
 
                 <!-- 変化後 -->
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
-                  <div style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">変化後 (ダイアモンド)</div>
-                  <div style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div
+                  style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
+                  <div
+                    style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">
+                    変化後 (ダイアモンド)</div>
+                  <div
+                    style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                     <img src="diamond.png" alt="ダイアモンド" style="width: 100%; height: 100%; object-fit: contain;">
                   </div>
                 </div>
@@ -367,8 +401,10 @@
 
               <!-- Shader Graph 構成図（中央寄せ） -->
               <div style="margin-top: 16px; text-align: center;">
-                <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">実装した Shader Graph 構成</div>
-                <img src="shadergraph.png" alt="Shader Graph" style="max-width: 100%; width: 450px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
+                <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">実装した Shader Graph
+                  構成</div>
+                <img src="shadergraph.png" alt="Shader Graph"
+                  style="max-width: 100%; width: 450px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
               </div>
             </div>
           </li>
@@ -381,9 +417,11 @@
       <!-- X (旧Twitter) アカウント -->
       <div class="details-group" style="margin-top: 20px;">
         <div class="details-label">X (旧Twitter)</div>
-        <a href="https://x.com/limited4tune?s=11&t=aaTJuv_ldn52T9fIAtOetQ" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; color: var(--accent-color); text-decoration: underline; font-size: 0.95rem; font-weight: 500;">
+        <a href="https://x.com/limited4tune?s=11&t=aaTJuv_ldn52T9fIAtOetQ" target="_blank" rel="noopener noreferrer"
+          style="display: inline-flex; align-items: center; gap: 6px; color: var(--accent-color); text-decoration: underline; font-size: 0.95rem; font-weight: 500;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: #000;">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
           https://x.com/limited4tune
         </a>
@@ -394,7 +432,7 @@
     <article class="work-card" id="missile-vr">
       <span class="work-badge" style="background-color: #7c3aed;">研究作品</span>
       <h2 class="work-title">3. ミサイル避難VRシミュレーター（学士時代の研究制作）</h2>
-      
+
       <div class="media-container">
         <video controls poster="thumbnail3.jpg">
           <source src="video3.mp4" type="video/mp4">
@@ -429,4 +467,5 @@
   </div>
 
 </body>
+
 </html>
