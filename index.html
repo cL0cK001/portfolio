@@ -237,7 +237,12 @@
       <div class="details-group">
         <div class="details-label">技術的な工夫</div>
         <ul>
-          <li><strong>モジュール分割による可読性の向上</strong>：ヘッダー、メイン処理、キャラクターデータ、マップデータ等を分離し可読性を向上</li>
+          <li>
+            <strong>モジュール分割による可読性の向上</strong>：ヘッダー、メイン処理、キャラクターデータ、マップデータ等を分離し可読性を向上
+            <div style="margin-top: 8px; margin-bottom: 12px;">
+              <img src="module_structure.png" alt="モジュール分割構成" style="max-width: 180px; height: auto; border: 1px solid var(--border-color); border-radius: 6px; padding: 4px; background: #fff;">
+            </div>
+          </li>
           <li><strong>高精度な当たり判定の実装</strong>：判定を上半身と下半身に分割して精度を上げ、壁のすり抜け現象を防止</li>
           <li><strong>自プレイヤー追従の画面スクロール</strong>：通信相手ではなく「自分の操作キャラクター」の動きに合わせて画面が縦スクロールする追従ロジック</li>
         </ul>
