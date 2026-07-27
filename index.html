@@ -28,7 +28,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1440px;
       margin: 0 auto;
       padding: 40px 20px;
     }
@@ -268,13 +268,13 @@
 
       <div class="details-group">
         <div class="details-label">概要</div>
-        <p>プログラマー4名のチームで開発を進めている「ローグライク×ギャンブル」をコンセプトとしたPC向けゲーム（制作中）。UFOキャッチャーやピンボールで資金を稼ぎ、毎ターンタイプライターでアームの強化・カスタマイズを行いながら、数ターン毎の訪問者イベントをクリアして目標金額の返済を目指すシステムです。</p>
+        <p>「ローグライク×ギャンブル」をコンセプトとしたPC向けゲーム（制作中）。UFOキャッチャーやピンボールで資金を稼ぎ、数ターンごとに迫る借金の返済を持ちこたえていきます。毎ターンアームの強化や速度アップなどのローグライク要素を駆使し、数ターンごとに発生する訪問者イベントをクリアしながら目標金額の返済を目指すゲームです。</p>
       </div>
 
       <div class="details-group">
         <div class="details-label">担当箇所・役割</div>
-        <p><strong>UFOキャッチャーシステムのメイン実装（4名プログラマーで均等分担）</strong><br>
-        ゲームの核となる「UFOキャッチャーシステム」（アームの移動・昇降・掴み制御、物理判定、毎ターンの機能・速度アップグレードロジック）の設計・開発を担当しています。</p>
+        <p><strong>UFOキャッチャーシステムの設計・メイン実装（4名体制での役割分担開発）</strong><br>
+        プログラマー4名でゲームの主要4システムをそれぞれ分担して開発を進めており、その中で核心となる「UFOキャッチャーシステム」全般を担当。アームの移動・昇降・掴み動作の物理判定から、UI実装、オブジェクト作成、毎ターンのアーム機能・速度等のアップグレードロジックまで、一貫して設計・開発を行っています。</p>
       </div>
 
       <div class="details-group">
@@ -299,6 +299,12 @@
         <div class="details-label">技術的な工夫</div>
         <ul>
           <li>
+            <strong>UFOキャッチャーの物理挙動・掴み動作のリアリティ追求</strong>：アーム移動時の自然な揺れ挙動や、コインを掴みあげる物理判定ロジックにこだわり、本物のキャッチャー機のようなリアルな操作感を再現。さらにタイプライターによる機能・速度アップグレードを動的に適用する柔軟なデータ構造と状態管理を実装
+            <div style="margin-top: 8px; margin-bottom: 12px;">
+              <img src="UFO.gif" alt="UFOキャッチャーのアーム揺れ・掴み動作デモ" style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            </div>
+          </li>
+          <li>
             <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader GraphとC#スクリプトを連動させ、「うごめくダイヤモンド（Dark Diamond）」からクリアな「ダイヤモンド（Diamond）」へリアルタイムに変化するシェーダー演出を実装
             <div style="margin-top: 12px; margin-bottom: 12px;">
               <!-- 変化フロー (darkdiamond.gif → diamond.png) -->
@@ -321,10 +327,7 @@
             </div>
           </li>
           <li>
-            <strong>UFOキャッチャーの物理挙動・掴み動作のリアリティ追求</strong>：アーム移動時の自然な揺れ挙動や、コインを掴みあげる物理判定ロジックにこだわり、本物のキャッチャー機のようなリアルな操作感を再現。さらにタイプライターによる機能・速度アップグレードを動的に適用する柔軟なデータ構造と状態管理を実装
-            <div style="margin-top: 8px; margin-bottom: 12px;">
-              <img src="UFO.gif" alt="UFOキャッチャーのアーム揺れ・掴み動作デモ" style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            </div>
+            <strong>3×3グリッドを活用した多様なアイテム落下パターンと出現率制御</strong>：9マスグリッドを基準に様々な落下パターンを生成。パターンに応じて「特定アイテムの偏り・限定ドロップ」や「均等出現」などを柔軟に制御する生成アルゴリズムを実装
           </li>
         </ul>
       </div>
