@@ -231,7 +231,7 @@
           <span class="tag">Linux</span>
           <span class="tag">ソケット通信</span>
         </div>
-        <p style="font-size: 0.85rem; color: #6b7280; margin-top: 8px; margin-bottom: 0;">※グラフィック素材はチームのデザイナーが作成し、音源（BGM・効果音）はWebサイトから引用・使用しています。</p>
+        <p style="font-size: 0.85rem; color: #6b7280; margin-top: 8px; margin-bottom: 0;">※このゲーム開発では生成AIを使用していません。グラフィック素材はチームのデザイナーが作成し、音源（BGM・効果音）はWebサイトから引用・使用しています。</p>
       </div>
 
       <div class="details-group">
@@ -408,11 +408,14 @@
         <div class="details-label">技術的な工夫</div>
         <ul>
           <li>
-            <strong>クレーンゲームの物理挙動・掴み動作のリアリティ追求</strong>：アーム移動時の自然な揺れ挙動や、コインを掴みあげる物理判定ロジックにこだわり、本物のキャッチャー機のようなリアルな操作感を再現
+            <strong>物理挙動によるリアルな操作感の追求</strong>：アーム移動時の自然な揺れや、コインを掴み上げる際の物理判定ロジックにこだわり、本物のクレーンゲーム機さながらのリアリティを再現。
             <div style="margin-top: 10px; margin-bottom: 12px; text-align: center;">
               <img src="UFO.gif" alt="クレーンゲームのアーム揺れ・掴み動作デモ"
                 style="max-width: 100%; width: 360px; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
             </div>
+          </li>
+          <li>
+            <strong>ステートマシンによる可読性の高い設計</strong>：複雑な状態（アームの開閉・昇降など）はメインプログラムで一元管理し、状態遷移の呼び出しは外部スクリプトに分離させることで、疎結合で可読性の高いシステムを構築。
           </li>
           <li>
             <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader
