@@ -367,7 +367,28 @@
             </div>
           </li>
           <li><strong>アーム操作の手触りと掴んだ瞬間の爽快感の追求</strong>：コインを掴み取る際の物理挙動や操作感にこだわり、直感的で心地よい手応えとプレイの爽快感を追求</li>
-          <li><strong>特定アイテム落下時のライト演出</strong>：特定のアイテムが落下する際にライト演出を挟むことで、何が手に入っているかを可視化し、期待感を強化</li>
+          <li>
+            <strong>特定アイテム落下時のライト演出</strong>：特定のアイテムが落下する際にライト演出を挟むことで、何が手に入っているかを可視化し、期待感を強化
+            <div style="margin-top: 14px; margin-bottom: 14px;">
+              <div style="display: flex; align-items: flex-start; justify-content: center; gap: 20px; flex-wrap: wrap; text-align: center;">
+                <!-- 時計 -->
+                <div style="display: flex; flex-direction: column; align-items: center; width: 440px; max-width: 100%;">
+                  <div style="font-size: 0.85rem; color: #4b5563; margin-bottom: 6px; font-weight: bold;">時計落下時のライト演出</div>
+                  <div style="width: 100%; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <img src="watch.gif" alt="時計落下時のライト演出" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                  </div>
+                </div>
+
+                <!-- ブラックダイヤモンド -->
+                <div style="display: flex; flex-direction: column; align-items: center; width: 440px; max-width: 100%;">
+                  <div style="font-size: 0.85rem; color: #4b5563; margin-bottom: 6px; font-weight: bold;">ブラックダイヤモンド落下時のライト演出</div>
+                  <div style="width: 100%; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <img src="blackdiamond.gif" alt="ブラックダイヤモンド落下時のライト演出" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -383,7 +404,7 @@
           </li>
           <li>
             <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader
-            GraphとC#スクリプトを連動させ、「青と黒の流体がうごめくダイアモンド」から「ダイアモンド」に変化するシェーダー演出を実装
+            GraphとC#スクリプトを連動させ、「青と黒の流体がうごめくダイヤモンド」から「ダイヤモンド」に変化するシェーダー演出を実装
             <div style="margin-top: 12px; margin-bottom: 12px;">
               <!-- 変化フロー（中央寄せ・Y座標位置統一・大サイズ） -->
               <div
@@ -393,10 +414,10 @@
                   style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
                   <div
                     style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">
-                    変化前 (青と黒の流体がうごめくダイアモンド)</div>
+                    変化前 (青と黒の流体がうごめくダイヤモンド)</div>
                   <div
                     style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="darkdiamond.gif" alt="青と黒の流体がうごめくダイアモンド"
+                    <img src="darkdiamond.gif" alt="青と黒の流体がうごめくダイヤモンド"
                       style="width: 100%; height: 100%; object-fit: contain;">
                   </div>
                 </div>
@@ -409,10 +430,10 @@
                   style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
                   <div
                     style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">
-                    変化後 (ダイアモンド)</div>
+                    変化後 (ダイヤモンド)</div>
                   <div
                     style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="diamond.png" alt="ダイアモンド" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="diamond.png" alt="ダイヤモンド" style="width: 100%; height: 100%; object-fit: contain;">
                   </div>
                 </div>
               </div>
