@@ -39,9 +39,32 @@
       margin-bottom: 50px;
     }
 
-    header h1 {
-      font-size: 2.2rem;
+    .header-title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
       margin-bottom: 10px;
+    }
+
+    .header-title-wrapper h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    .header-decor-img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 640px) {
+      .header-decor-img {
+        height: 40px;
+      }
+      .header-title-wrapper {
+        gap: 10px;
+      }
     }
 
     header p {
@@ -182,7 +205,11 @@
 
   <div class="container">
     <header>
-      <h1>ポートフォリオ</h1>
+      <div class="header-title-wrapper">
+        <img src="DevilEye.png" alt="DevilEye" class="header-decor-img">
+        <h1>ポートフォリオ</h1>
+        <img src="DevilEye_Roulette.png" alt="DevilEye_roulette" class="header-decor-img">
+      </div>
       <p>徳島大学大学院 修士1年 創成科学研究科 理工学専攻 知能情報システムコース 逢坂 星音</p>
       <p>制作したゲーム作品および研究成果です。</p>
       <nav class="nav-links">
