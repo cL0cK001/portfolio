@@ -277,7 +277,13 @@
     <!-- 作品2 -->
     <article class="work-card" id="odd-odds">
       <span class="work-badge" style="background-color: #059669;">制作中（5月〜）</span>
-      <h2 class="work-title">2. ODD ODDs（PC向けローグライク×ギャンブルゲーム）</h2>
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
+        <h2 class="work-title" style="margin-bottom: 0;">2. ODD ODDs（PC向けローグライク×ギャンブルゲーム）</h2>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="DevilEye_Roulette.png" alt="DevilEye_Roulette" style="height: 48px; width: auto; object-fit: contain;">
+          <img src="DevilEye.png" alt="DevilEye" style="height: 48px; width: auto; object-fit: contain;">
+        </div>
+      </div>
 
       <div class="media-container">
         <video controls poster="thumbnail2.jpg">
@@ -404,7 +410,7 @@
           </li>
           <li>
             <strong>Shader GraphとC#による動的なマテリアル変化演出</strong>：Shader
-            GraphとC#スクリプトを連動させ、「青と黒の流体がうごめくダイヤモンド」から「ダイヤモンド」に変化するシェーダー演出を実装
+            GraphとC#スクリプトを連動させ、「青と黒の流体がうごめくブラックダイヤモンド」から「ダイヤモンド」に変化するシェーダー演出を実装
             <div style="margin-top: 12px; margin-bottom: 12px;">
               <!-- 変化フロー（中央寄せ・Y座標位置統一・大サイズ） -->
               <div
@@ -414,10 +420,10 @@
                   style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; width: 460px; max-width: 100%;">
                   <div
                     style="font-size: 0.9rem; color: #6b7280; margin-bottom: 8px; font-weight: bold; min-height: 2.4em; display: flex; align-items: flex-end; justify-content: center;">
-                    変化前 (青と黒の流体がうごめくダイヤモンド)</div>
+                    変化前 (青と黒の流体がうごめくブラックダイヤモンド)</div>
                   <div
                     style="width: 100%; height: 260px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="darkdiamond.gif" alt="青と黒の流体がうごめくダイヤモンド"
+                    <img src="darkdiamond.gif" alt="青と黒の流体がうごめくブラックダイヤモンド"
                       style="width: 100%; height: 100%; object-fit: contain;">
                   </div>
                 </div>
@@ -479,17 +485,17 @@
         <div style="display: flex; align-items: flex-end; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 12px; text-align: center;">
           <!-- DevilEye -->
           <div style="display: flex; flex-direction: column; align-items: center; width: 280px; max-width: 100%;">
-            <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">DevilEye</div>
+            <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">クレーンゲームをプレイしていないとき</div>
             <div style="width: 100%; height: 180px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-              <img src="DevilEye.png" alt="DevilEye" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+              <img src="DevilEye.png" alt="クレーンゲームをプレイしていないとき" style="max-width: 100%; max-height: 100%; object-fit: contain;">
             </div>
           </div>
 
           <!-- DevilEye_Roulette -->
           <div style="display: flex; flex-direction: column; align-items: center; width: 280px; max-width: 100%;">
-            <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">DevilEye_Roulette</div>
+            <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; font-weight: bold;">クレーンゲームプレイ中</div>
             <div style="width: 100%; height: 180px; background: #000; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-              <img src="DevilEye_Roulette.png" alt="DevilEye_Roulette" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+              <img src="DevilEye_Roulette.png" alt="クレーンゲームプレイ中" style="max-width: 100%; max-height: 100%; object-fit: contain;">
             </div>
           </div>
         </div>
